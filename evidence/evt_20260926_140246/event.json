@@ -1,0 +1,13 @@
+{
+ "incidentId": "evt_20260926_140246",
+ "event": {
+  "eventType": "SUSPICIOUS_ACTIVITY",
+  "timestamp": 1790411566.5446584,
+  "confidence": 0.57,
+  "description": "SIMULATED trigger on live frame (empty scene) to test capture path; detection proven in Stages 3-4",
+  "durationSec": 10.0,
+  "status": "NEW"
+ },
+ "preFrames": 40,
+ "postFrames": 59
+}

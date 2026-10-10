@@ -1,0 +1,23 @@
+# Secrets / local config
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# CCTV runtime artefacts (never commit footage)
+temporary/
+test_output/
+*.jpg
+*.mp4
+!frontend/**/*.jpg
+
+# Supabase (service key lives in .env only — never commit key files)
+supabase-*.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

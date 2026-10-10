@@ -1,0 +1,20 @@
+# Phase 1 — minimal runtime.
+fastapi==0.115.*
+uvicorn[standard]==0.30.*
+opencv-python-headless==4.10.*
+numpy==1.26.*
+python-dotenv==1.0.*
+imageio-ffmpeg==0.6.*  # user-space ffmpeg binary (no sudo needed); ffprobe stays optional
+
+# Stage 3 — pretrained person detection (CPU-only torch for MVP).
+--index-url https://download.pytorch.org/whl/cpu
+torch
+ultralytics==8.*
+pydantic-settings==2.5.*
+
+# Later stages (uncomment when needed):
+# ultralytics==8.*      # Stage 3: pretrained person detection
+# torch --index-url https://download.pytorch.org/whl/cpu  # CPU-only for MVP
+
+# Stage 6 (revised) — Supabase Postgres + Storage (backend only).
+supabase==2.*
